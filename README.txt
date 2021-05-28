@@ -38,11 +38,14 @@ Getting Started
 ===============================================================================
 
 Requirements:
-  1. Visual Studio 2017 (and some knowledge on how to build, run, and debug C++/C# projects)
+  1. Visual Studio 2017 (or 2019) (and some knowledge on how to build, run, and debug C++/C# projects)
   2. Microsoft DirectX SDK (June 2010 or later) 
-  3. The source code from Google Code - (TortoiseSVN is a good client to use!)
-        svn checkout http://gamecode4.googlecode.com/svn/trunk/ gamecode4-read-only
-  4. 3rdParty.zip from http://code.google.com/p/gamecode4/downloads/list
+  3. The source code from https://github.com/gordonglas/gamecode4/tree/vs2017
+        git clone git@github.com:gordonglas/gamecode4.git
+        cd gamecode4
+        git checkout vs2017
+  4. 3rdParty_v4.0-VS2017.zip from: https://www.dropbox.com/s/3r16mdr83z7njuu/3rdParty_v4.0-VS2017.zip?dl=0
+        also mirrored at: https://drive.google.com/file/d/1aq1AVktJhKDnxbJcurcEz-D4PhJJQbMc/view?usp=sharing
         Unzip it into the root directory of the project - it will add directories to 
         Source.
   
@@ -56,7 +59,7 @@ Building Teapot Wars:
                       |-- Game (contains the files needed to run TeapotWars)
                       |-- Source (the entire source tree, including GCC4\3rdParty directory from the ZIP file)
   3. Open Source\TeapotWars\Msvc\TeapotWars_2017.sln and rebuild everything.
-  4. In the Solution Explorer in VS2017, right click on TeapotWars_2017 and....
+  4. In the Solution Explorer in VS2017 (or VS2019), right click on TeapotWars_2017 and....
       a. ...set it as your startup project. Then, right click on it again and...
 	  b. open the Properties dialog, and...
 	  c. set the Configuration to All Configurations and Platform to All Platforms, and...
